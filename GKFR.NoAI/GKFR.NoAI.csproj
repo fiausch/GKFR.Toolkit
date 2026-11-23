@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.NoAI</AssemblyName>
+    <Product>GKFR No AI</Product>
+    <Version>1.0.1</Version>
+    <RootNamespace>GKFR.NoAI</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

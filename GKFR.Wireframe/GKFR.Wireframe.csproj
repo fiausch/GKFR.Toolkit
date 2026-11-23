@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.Wireframe</AssemblyName>
+    <Product>GKFR Wireframe</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.Wireframe</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

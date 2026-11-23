@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.AllJon</AssemblyName>
+    <Product>GKFR All Jon</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.AllJon</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

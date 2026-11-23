@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.ItemMultiplier</AssemblyName>
+    <Product>GKFR Item Multiplier</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.ItemMultiplier</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

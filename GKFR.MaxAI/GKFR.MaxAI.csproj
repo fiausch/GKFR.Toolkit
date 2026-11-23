@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.MaxAI</AssemblyName>
+    <Product>GKFR Max AI</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.MaxAI</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

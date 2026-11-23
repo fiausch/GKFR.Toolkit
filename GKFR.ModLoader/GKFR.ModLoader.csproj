@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.ModLoader</AssemblyName>
+    <Product>GKFR Mod Loader</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.ModLoader</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(MSBuildThisFileDirectory)..\lib\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(MSBuildThisFileDirectory)..\lib\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

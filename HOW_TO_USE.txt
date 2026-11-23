@@ -1,0 +1,14 @@
+Mod                  Default key   What it does
+ModLoader            F1            in-game plugin manager window (optional)
+NoAI                 F6            remove CPU racers
+Lap Times            F3            race standings overlay
+CC Class             F2            custom engine class / top speed
+Item Multiplier      F4            multiply items from boxes
+Asset Loader         (config)      runtime texture/mesh replacement
+Track Loader         (config)      load custom tracks
+Single Player MP     (auto)        race multiplayer tracks alone
+Item Probability     F7            edit item drop chances (advanced)
+MaxAI                F7            limit AI count
+All Jon              F6            make every AI racer Jon
+Noclip               F8 / F11       fly through walls; first-person view
+Wireframe            F9 / F10 / F12 wireframe all models + colliders; cycle All/Invisible/Death; F12 solid colour

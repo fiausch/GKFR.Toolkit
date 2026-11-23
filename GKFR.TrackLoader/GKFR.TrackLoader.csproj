@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.TrackLoader</AssemblyName>
+    <Product>GKFR Track Loader</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.TrackLoader</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

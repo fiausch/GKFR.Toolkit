@@ -1,0 +1,6 @@
+<Project>
+  <Target Name="CopyPluginsToDist" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <MakeDir Directories="$(MSBuildThisFileDirectory)dist" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(MSBuildThisFileDirectory)dist" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
