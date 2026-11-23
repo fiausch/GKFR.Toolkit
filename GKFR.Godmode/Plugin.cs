@@ -21,7 +21,7 @@ namespace GKFR.Godmode
         ConfigEntry<bool> enabledEntry;
         ConfigEntry<KeyCode> toggleKey;
         ConfigEntry<bool> disableDamage;
-
+        
         bool godmodeActive;
         
         // IGkfrMod metadata for the optional GKFR ModLoader window.
@@ -62,17 +62,22 @@ namespace GKFR.Godmode
             if (!godmodeActive || !disableDamage.Value)
                 return;
 
-            // Find all player karts and disable their damage
-            var playerKarts = FindObjectsOfType<RcKart>();
-            
-            foreach (var kart in playerKarts)
+            // Find the current player kart using GameMode and Driver.IsHuman property
+            var gameMode = Singleton<GameManager>.Instance.GameMode;
+            if (gameMode == null)
+                return;
+
+            // Iterate through all drivers to find human players
+            foreach (var driver in gameMode.Drivers.Values)
             {
-                // Check if this is the player kart (we'll use a simple approach to identify it)
-                if (kart != null && kart.IsPlayer())
+                if (driver != null && driver.IsHuman)
                 {
-                    // Disable damage by setting health to maximum or using other methods
-                    // This approach assumes there's a way to disable damage, which might need adjustment based on actual game code structure
-                    kart.SetInvincible(true);
+                    // Apply invincibility to the player's kart using existing Driver methods
+                    if (driver.Kart != null)
+                    {
+                        // Enable invincibility by activating blinking invulnerability (this is how it's done in the game)
+                        driver.ActivateBlinkingInvulnerability();
+                    }
                 }
             }
         }
@@ -84,13 +89,16 @@ namespace GKFR.Godmode
             {
                 godmodeActive = false;
                 // Reset any godmode effects
-                var playerKarts = FindObjectsOfType<RcKart>();
-                
-                foreach (var kart in playerKarts)
+                var gameMode = Singleton<GameManager>.Instance.GameMode;
+                if (gameMode == null)
+                    return;
+
+                foreach (var driver in gameMode.Drivers.Values)
                 {
-                    if (kart != null && kart.IsPlayer())
+                    if (driver != null && driver.IsHuman && driver.Kart != null)
                     {
-                        kart.SetInvincible(false);
+                        // Stop blinking invulnerability to restore normal behavior
+                        driver.StopBlinkingInvulnerability();
                     }
                 }
             }
