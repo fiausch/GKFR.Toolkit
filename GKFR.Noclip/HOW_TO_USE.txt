@@ -1,0 +1,45 @@
+# Noclip Mod
+
+## Description
+Fly the local kart through walls and floors. F8 toggles, F11 first-person. WASD move, Space/Ctrl up/down, Shift faster, mouse rotates (pitch+yaw).
+
+## Installation
+1. Copy GKFR.Noclip.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F8 to toggle noclip on/off
+2. While active:
+   - WASD: Fly forward/back and strafe left/right
+   - Space/Ctrl: Fly up/down (world directions)
+   - Shift: Hold to fly faster
+   - Mouse: Rotate (pitch + yaw)
+3. Press F11 to toggle first-person camera
+
+## Configuration
+Edit BepInEx/config/com.gkfr.noclip.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F8)
+- General.FirstPersonKey: First-person toggle (default: F11)
+- Movement.MoveSpeed: Fly speed (default: 25)
+- Movement.FastMoveSpeed: Fast speed (default: 90)
+- Movement.LookSensitivity: Mouse sensitivity (default: 3)
+- Movement.StrafeWithArrows: Arrow keys strafe (default: true)
+- Movement.InvertLookY: Invert mouse Y (default: false)
+- FirstPerson.Height: Camera height (default: 0.8)
+- FirstPerson.Forward: Camera forward offset (default: 0.3)
+
+## Keybindings
+- F8: Toggle noclip on/off
+- F11: Toggle first-person camera
+- WASD: Movement
+- Space/Ctrl: Up/Down
+- Shift: Fast movement
+- Mouse: Rotation
+
+## Notes
+- The kart passes through walls and floors
+- Physics are suspended while noclip is active
+- First-person view parks camera on the kart
+- HUD wrong-way indicator is suppressed

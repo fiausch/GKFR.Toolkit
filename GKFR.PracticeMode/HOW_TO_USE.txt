@@ -1,0 +1,35 @@
+# Practice Mode Mod
+
+## Description
+No countdown, no lap limit, instant-respawn toggle, key-to-restart. F4 toggles practice mode.
+
+## Installation
+1. Copy GKFR.PracticeMode.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F4 to toggle practice mode on/off
+2. In practice mode:
+   - No countdown before race starts
+   - No lap limit
+   - Instant respawn on crash (if enabled)
+3. Press R to restart race
+
+## Configuration
+Edit BepInEx/config/com.gkfr.practicemode.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F4)
+- General.RestartKey: Restart key (default: R)
+- Race.NoCountdown: Disable countdown (default: true)
+- Race.NoLapLimit: Disable lap limit (default: true)
+- Race.InstantRespawn: Instant respawn on crash (default: true)
+
+## Keybindings
+- F4: Toggle practice mode on/off
+- R: Restart race (in practice mode)
+
+## Notes
+- Practice mode is useful for testing and training
+- All settings can be configured in the config file
+- Instant respawn can be disabled if preferred

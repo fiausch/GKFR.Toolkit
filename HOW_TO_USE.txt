@@ -1,14 +1,107 @@
-Mod                  Default key   What it does
-ModLoader            F1            in-game plugin manager window (optional)
-NoAI                 F6            remove CPU racers
-Lap Times            F3            race standings overlay
-CC Class             F2            custom engine class / top speed
-Item Multiplier      F4            multiply items from boxes
-Asset Loader         (config)      runtime texture/mesh replacement
-Track Loader         (config)      load custom tracks
-Single Player MP     (auto)        race multiplayer tracks alone
-Item Probability     F7            edit item drop chances (advanced)
-MaxAI                F7            limit AI count
-All Jon              F6            make every AI racer Jon
-Noclip               F8 / F11       fly through walls; first-person view
-Wireframe            F9 / F10 / F12 wireframe all models + colliders; cycle All/Invisible/Death; F12 solid colour
+# GKFR.Toolkit - Mod Documentation
+
+## Overview
+The GKFR.Toolkit is a collection of BepInEx mods for Garfield Kart: Furious Racing, providing various enhancements and tools to improve gameplay experience.
+
+## Mods Included
+
+### Core Functionality Mods
+
+| Mod | Default Key | Description |
+|-----|-------------|-------------|
+| **ModLoader** | F1 | In-game plugin manager window (optional) |
+| **NoAI** | F6 | Remove CPU racers |
+| **Lap Times** | F3 | Race standings overlay |
+| **CC Class** | F2 | Custom engine class / top speed |
+| **Item Multiplier** | F4 | Multiply items from boxes |
+| **Asset Loader** | - | Runtime texture/mesh replacement |
+| **Track Loader** | - | Load custom tracks |
+| **Single Player MP** | - | Race multiplayer tracks alone |
+| **Item Probability** | F7 | Edit item drop chances (advanced) |
+| **MaxAI** | F7 | Limit AI count |
+| **All Jon** | F6 | Make every AI racer Jon |
+| **Noclip** | F8 / F11 | Fly through walls; first-person view |
+| **Wireframe** | F9 / F10 / F12 | Wireframe all models + colliders |
+
+### Detailed Mod Descriptions
+
+#### ModLoader (Optional)
+- Press F1 to open the mod loader window
+- View and toggle all installed plugins
+- Works independently without requiring other mod loader
+
+#### NoAI
+- Press F6 to toggle No AI on/off
+- Removes all CPU racers from races
+- Results display only human players
+
+#### Lap Times
+- Press F3 to toggle the lap times overlay on/off
+- Shows placement, speed, lap times, and gap behind 1st for all racers
+
+#### CC Class
+- Press F2 to open the CC settings window
+- Override top speed based on engine class
+- Slider 0-999; the box accepts any CC
+
+#### Item Multiplier
+- Press F4 to open the item multiplier settings window
+- Multiplies items from item boxes
+- Slider 1-10; the box accepts any value
+
+#### Asset Loader
+- Load custom assets from ./CustomAssets folder for hot-swapping
+- Supports textures (.png, .jpg) and meshes (.obj)
+
+#### Track Loader
+- Load custom tracks
+- Configure track paths in the config file
+
+#### Single Player Multiplayer
+- Allows single-player races in multiplayer mode
+- Bypasses the 2-player minimum requirement
+
+#### Item Probability (Advanced)
+- Press F7 to open the item probability editor
+- Customize item probabilities for each race position
+- Changes require code editing and recompilation
+
+#### MaxAI
+- Press F7 to open the Max AI settings window
+- Limits the number of AI players that spawn
+- Quick presets: 0 AI, 3 AI, 7 AI, Unlimited (999)
+
+#### All Jon
+- Press F6 to toggle All Jon on/off
+- Replaces all AI racers with Jon character
+
+#### Noclip
+- Press F8 to toggle noclip on/off
+- Press F11 to toggle first-person camera
+- WASD move, Space/Ctrl up/down, Shift faster, mouse rotates (pitch+yaw)
+
+#### Wireframe
+- Press F9 to cycle through modes (All/Invisible/Death)
+- Press F10 to toggle colliders
+- Press F12 for solid colour mode
+
+## Installation
+
+1. Copy the desired .dll files to your BepInEx/plugins folder
+2. Launch the game
+3. Use the configured keybindings to enable features
+
+## Configuration
+
+Each mod has its own configuration file in BepInEx/config/:
+- Com.gkfr.modloader.cfg
+- Com.gkfr.noai.cfg
+- Com.gkfr.laptimes.cfg
+- Com.gkfr.cc.cfg
+- Com.gkfr.itemmultiplier.cfg
+- And more...
+
+## Notes
+- Some mods may conflict with each other (see Keybinding Conflicts section)
+- Test each mod individually before combining
+- Configuration changes require restart or runtime toggle

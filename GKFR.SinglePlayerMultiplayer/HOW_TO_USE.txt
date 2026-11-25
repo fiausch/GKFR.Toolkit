@@ -1,0 +1,26 @@
+# Single Player Multiplayer Mod
+
+## Description
+Allows single-player races in multiplayer mode by bypassing the 2-player minimum requirement.
+
+## Installation
+1. Copy GKFR.SinglePlayerMultiplayer.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. This mod works automatically when loaded
+2. You can now create and join multiplayer races with a single player
+3. The mod bypasses the 2-player minimum requirement
+
+## Configuration
+Edit BepInEx/config/gkfr.singleplayermultiplayer.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+
+## Keybindings
+No keybindings - the mod works automatically.
+
+## Notes
+- This mod patches GkNetMgr methods to allow single-player in multiplayer context
+- May cause sync issues in actual multiplayer sessions
+- Best used for testing or solo practice in multiplayer tracks

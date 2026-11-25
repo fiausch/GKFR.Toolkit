@@ -1,0 +1,29 @@
+# No Items Mod
+
+## Description
+Restrict which items boxes can give. F6 toggles no-items on/off.
+
+## Installation
+1. Copy GKFR.NoItems.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F6 to toggle no-items on/off
+2. When enabled, restrict which items item boxes can give
+3. Configure whitelist items in settings
+
+## Configuration
+Edit BepInEx/config/com.gkfr.noitems.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F6)
+- General.DisableAllItems: Disable all items completely (default: false)
+- General.WhitelistItems: Comma-separated list of allowed items (default: "")
+
+## Keybindings
+- F6: Toggle no-items on/off
+
+## Notes
+- This mod hooks into the item distribution system
+- Can be used with ItemMultiplier for combined effects
+- Implementation details depend on game API integration

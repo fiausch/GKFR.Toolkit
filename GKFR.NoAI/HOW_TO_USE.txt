@@ -1,0 +1,27 @@
+# No AI Mod
+
+## Description
+Stops CPU karts from spawning in both single-player and multiplayer. Results only show players. Toggle with F6 (no restart needed).
+
+## Installation
+1. Copy GKFR.NoAI.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F6 to toggle No AI on/off
+2. When enabled, all CPU racers are removed from the race
+3. Results display only human players
+
+## Configuration
+Edit BepInEx/config/com.gkfr.noai.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F6)
+
+## Keybindings
+- F6: Toggle No AI on/off
+
+## Notes
+- This mod patches the CreatePlayer method to skip AI creation
+- Results filtering ensures only real players are displayed
+- Works in both single-player and multiplayer races

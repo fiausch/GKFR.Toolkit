@@ -1,0 +1,36 @@
+# Telemetry HUD Mod
+
+## Description
+Speed, boost level, drift charge, gear, slipstream overlay. F3 toggles telemetry HUD on/off.
+
+## Installation
+1. Copy GKFR.TelemetryHUD.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F3 to toggle telemetry HUD on/off
+2. The HUD displays:
+   - Current speed (km/h)
+   - Boost level
+   - Drift charge
+   - Gear information
+   - Slipstream information
+
+## Configuration
+Edit BepInEx/config/com.gkfr.telemetryhud.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F3)
+- Display.ShowSpeed: Show speed information (default: true)
+- Display.ShowBoost: Show boost level (default: true)
+- Display.ShowDrift: Show drift charge (default: true)
+- Display.ShowGear: Show gear information (default: true)
+- Display.ShowSlipstream: Show slipstream information (default: true)
+
+## Keybindings
+- F3: Toggle telemetry HUD on/off
+
+## Notes
+- This mod extends the Lap Times overlay
+- Some telemetry data may need game API integration
+- Display position is fixed at top-left corner

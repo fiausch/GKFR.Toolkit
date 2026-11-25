@@ -1,0 +1,29 @@
+# Mod Loader Mod
+
+## Description
+Optional in-game plugin manager window. Press F1 to toggle.
+
+## Installation
+1. Copy GKFR.ModLoader.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F1 to open the mod loader window
+2. The window shows:
+   - Legacy GKFR mods (optional registration)
+   - BepInEx plugins in the plugins folder
+3. Click mod names to toggle them on/off
+4. Drag window to move it around
+
+## Configuration
+Edit BepInEx/config/com.gkfr.modloader.cfg to adjust settings:
+
+- General.ToggleKey: Toggle key (default: F1)
+
+## Keybindings
+- F1: Toggle mod loader window on/off
+
+## Notes
+- The mod loader is optional - mods work independently without it
+- Allows toggling plugins at runtime without restarting the game
+- Can also rename .dll files to .dll.disabled to disable them
