@@ -123,7 +123,7 @@ namespace GKFR.ModLoader
             GUILayout.Label("These plugins work independently without requiring the mod loader.");
             GUILayout.Space(4f);
 
-            string[] files = Directory.GetFiles(pluginPath, "*.dll*", SearchOption.AllDirectories);
+            string[] files = Directory.GetFiles(pluginPath, "*.dll", SearchOption.AllDirectories);
             Array.Sort(files, StringComparer.OrdinalIgnoreCase);
             int shown = 0;
             for (int i = 0; i < files.Length; i++)

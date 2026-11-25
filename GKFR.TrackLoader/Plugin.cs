@@ -186,7 +186,7 @@ namespace GKFR.TrackLoader
                 // Try to map to original track names
                 // Garfield Kart uses codes like "E1C1" (Episode 1, Circuit 1)
                 // or "E4C3" (Episode 4, Circuit 3)
-                if (sceneName.Length == 4 && char.IsUpper(sceneName[0]) && sceneName[1] == '1' && sceneName[2] == 'C')
+                if (sceneName.Length == 4 && char.IsUpper(sceneName[0]) && char.IsDigit(sceneName[1]) && sceneName[2] == 'C')
                 {
                     trackMappings[sceneName] = file;
                     Logger.LogInfo("Mapped track: " + sceneName + " -> " + relativePath);

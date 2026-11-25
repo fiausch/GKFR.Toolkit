@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.CheckpointTeleporter</AssemblyName>
+    <Product>GKFR Checkpoint Teleporter</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.CheckpointTeleporter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

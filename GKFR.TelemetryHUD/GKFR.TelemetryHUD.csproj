@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.TelemetryHUD</AssemblyName>
+    <Product>GKFR Telemetry HUD</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.TelemetryHUD</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>

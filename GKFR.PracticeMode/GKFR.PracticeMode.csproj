@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>GKFR.PracticeMode</AssemblyName>
+    <Product>GKFR Practice Mode</Product>
+    <Version>1.0.0</Version>
+    <RootNamespace>GKFR.PracticeMode</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GKFR.ModLoader\GKFR.ModLoader.csproj" />
+  </ItemGroup>
+</Project>
