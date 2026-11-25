@@ -1,0 +1,29 @@
+# Item Multiplier Mod
+
+## Description
+Multiplies items from item boxes. Slider 1-10; textbox accepts any value.
+
+## Installation
+1. Copy GKFR.ItemMultiplier.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F4 to open the item multiplier settings window
+2. Use the slider to adjust multiplier (1-10)
+3. Or type a custom value in the text box and press Apply
+4. Quick preset buttons for 1x, 2x, 3x
+
+## Configuration
+Edit BepInEx/config/com.gkfr.itemmultiplier.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: false)
+- General.Multiplier: Item multiplier value (default: 1)
+- General.ToggleKey: Toggle key (default: F4)
+
+## Keybindings
+- F4: Toggle item multiplier settings window on/off
+
+## Notes
+- The mod multiplies quantities in the item box system
+- Enable must be set to true in config for the mod to work
+- This mod hooks into the KartBonusMgr system

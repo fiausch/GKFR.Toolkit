@@ -1,0 +1,28 @@
+# Item Probability Editor Mod
+
+## Description
+Customize item probabilities for each race position. F7 to open. Changes require recompile.
+
+## Installation
+1. Copy GKFR.ItemProbability.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F7 to open the item probability editor window
+2. Select a position using Previous/Next buttons
+3. View and modify probabilities for each item type
+4. To customize, edit the CUSTOM_PROBABILITIES array in Plugin.cs and recompile
+
+## Configuration
+Edit BepInEx/config/com.gkfr.itemprobability.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+
+## Keybindings
+- F7: Toggle item probability editor on/off
+
+## Notes
+- This is an advanced mod - customization requires code editing and recompilation
+- Probabilities should sum to 100% for proper distribution
+- Changes are applied at compile time, not runtime
+- The mod works by patching the BoxBonusEntity.GetItemProbability method

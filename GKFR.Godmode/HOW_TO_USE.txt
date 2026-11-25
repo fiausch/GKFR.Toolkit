@@ -1,0 +1,32 @@
+# Godmode Mod
+
+## Description
+Makes karts invincible to damage. F5 toggles godmode.
+
+## Installation
+1. Copy GKFR.Godmode.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F5 to toggle godmode on/off
+2. Press F5 repeatedly to cycle through 4 targeting modes:
+   - Mode 0: Player only
+   - Mode 1: All humans
+   - Mode 2: All karts
+   - Mode 3: AI only
+
+## Configuration
+Edit BepInEx/config/com.gkfr.godmode.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F5)
+- General.DisableDamage: Disable damage when godmode is active (default: true)
+- General.GodmodeMode: Default targeting mode (default: 0)
+
+## Keybindings
+- F5: Toggle godmode and cycle through modes
+
+## Notes
+- Godmode activates blinking invulnerability effect
+- Works by patching kart damage functions
+- Incompatible with some item effects that rely on damage mechanics

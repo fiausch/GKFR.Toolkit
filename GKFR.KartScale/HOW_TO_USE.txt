@@ -1,0 +1,32 @@
+# Kart Scale Mod
+
+## Description
+Grow/shrink your kart + hitbox. NUMPAD +/- to adjust scale.
+
+## Installation
+1. Copy GKFR.KartScale.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. During a race, press NUMPAD + to increase kart scale
+2. Press NUMPAD - to decrease kart scale
+3. Adjust scale step and range in settings
+
+## Configuration
+Edit BepInEx/config/com.gkfr.kartscale.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- Controls.ScaleUpKey: Key to increase scale (default: KeypadPlus)
+- Controls.ScaleDownKey: Key to decrease scale (default: KeypadMinus)
+- Scale.ScaleStep: Amount to change scale per key press (default: 0.1)
+- Scale.MinScale: Minimum scale allowed (default: 0.5)
+- Scale.MaxScale: Maximum scale allowed (default: 2.0)
+
+## Keybindings
+- NUMPAD +: Increase kart scale
+- NUMPAD -: Decrease kart scale
+
+## Notes
+- The mod modifies the kart's transform scale
+- Hitbox scaling may require additional game API integration
+- Works best in practice mode or with godmode enabled

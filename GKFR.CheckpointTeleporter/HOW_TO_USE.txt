@@ -1,0 +1,32 @@
+# Checkpoint Teleporter Mod
+
+## Description
+Teleport to start / last / next checkpoint during a race.
+
+## Installation
+1. Copy GKFR.CheckpointTeleporter.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+During a race:
+- Press F7 to teleport to the start checkpoint
+- Press F8 to teleport to the last checkpoint
+- Press F9 to teleport to the next checkpoint
+
+## Configuration
+Edit BepInEx/config/com.gkfr.checkpointteleporter.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- Teleport.ToStartKey: Key to teleport to start (default: F7)
+- Teleport.ToLastKey: Key to teleport to last checkpoint (default: F8)
+- Teleport.ToNextKey: Key to teleport to next checkpoint (default: F9)
+
+## Keybindings
+- F7: Teleport to start checkpoint
+- F8: Teleport to last checkpoint
+- F9: Teleport to next checkpoint
+
+## Notes
+- The actual teleportation functionality is planned but needs game API implementation
+- This mod is useful for practice and debugging
+- Only works for the local player's kart

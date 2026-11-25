@@ -1,0 +1,32 @@
+# Lap Times Mod
+
+## Description
+Shows placement, speed, lap times, and gap behind 1st for all racers. F3 toggles the overlay.
+
+## Installation
+1. Copy GKFR.LapTimes.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F3 during a race to toggle the lap times overlay on/off
+2. The overlay shows:
+   - Position (rank)
+   - Driver name
+   - Current speed
+   - Current lap
+   - Last lap time
+   - Gap behind 1st place
+
+## Configuration
+Edit BepInEx/config/com.gkfr.laptimes.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the overlay (default: true)
+- General.OverlayKey: Toggle key (default: F3)
+
+## Keybindings
+- F3: Toggle lap times overlay on/off
+
+## Notes
+- The overlay appears on the right side of the screen
+- Data is sorted by placement (1st place first)
+- Gap calculation is approximate based on distance and speed

@@ -1,0 +1,43 @@
+# Debug Item Spawner Mod
+
+## Description
+Press number keys to give yourself any item during a race.
+
+## Installation
+1. Copy GKFR.DebugItemSpawner.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+During a race:
+- Press 1-9 to give yourself items
+- 1: Pie (Blue shell)
+- 2: Boost
+- 3: UFO (Floating bomb)
+- 4: Banana
+- 5: Shell
+- 6: Mushroom
+- 7: Lightning
+- 8: Star
+- 9: Flower
+
+## Configuration
+Edit BepInEx/config/com.gkfr.debugitemspawner.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- Items.Item1Key: Key to give pie item (default: Alpha1)
+- Items.Item2Key: Key to give boost item (default: Alpha2)
+- Items.Item3Key: Key to give UFO item (default: Alpha3)
+- Items.Item4Key: Key to give banana item (default: Alpha4)
+- Items.Item5Key: Key to give shell item (default: Alpha5)
+- Items.Item6Key: Key to give mushroom item (default: Alpha6)
+- Items.Item7Key: Key to give lightning item (default: Alpha7)
+- Items.Item8Key: Key to give star item (default: Alpha8)
+- Items.Item9Key: Key to give flower item (default: Alpha9)
+
+## Keybindings
+- Alpha1-9: Give specific item to player kart
+
+## Notes
+- This mod is primarily for debugging and testing
+- Items are given directly to the player kart
+- The exact item mapping may need adjustment based on game implementation

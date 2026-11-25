@@ -1,0 +1,30 @@
+# FOV Mod
+
+## Description
+Wider FOV and pushed far-clip for a less claustrophobic view.
+
+## Installation
+1. Copy GKFR.FOV.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F12 to toggle FOV adjustment on/off
+2. When enabled:
+   - Field of view is multiplied by 1.5x (configurable)
+   - Far clip plane is multiplied by 3.0x (configurable)
+
+## Configuration
+Edit BepInEx/config/com.gkfr.fov.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F12)
+- General.FovMultiplier: FOV multiplier (default: 1.5)
+- General.FarClipMultiplier: Far clip multiplier (default: 3.0)
+
+## Keybindings
+- F12: Toggle FOV adjustment on/off
+
+## Notes
+- The mod stores original values and restores them when disabled
+- Works by modifying the main camera's field of view and far clip plane
+- Recommended for players who find the default view too restrictive

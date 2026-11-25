@@ -1,0 +1,29 @@
+# CC Class Mod
+
+## Description
+Overrides top speed based on engine class. 50 / 100 / 150 match the menu. Slider 0-999; the box accepts any CC.
+
+## Installation
+1. Copy GKFR.CC.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F2 to open the CC settings window
+2. Use the slider to adjust engine class (0-999 CC)
+3. Or type a custom value in the text box and press Apply
+4. Quick preset buttons for 50cc, 100cc, and 150cc
+
+## Configuration
+Edit BepInEx/config/com.gkfr.cc.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.CubicCentimetres: Engine class in CC (default: 150)
+- General.ToggleKey: Toggle key (default: F2)
+
+## Keybindings
+- F2: Toggle CC settings window on/off
+
+## Notes
+- The mod works by modifying the kart's physics tables
+- Speed and torque are interpolated between 50cc, 100cc, and 150cc baselines
+- The mod captures vanilla speeds on first load for accurate interpolation

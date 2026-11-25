@@ -1,0 +1,30 @@
+# Asset Loader Mod
+
+## Description
+Load custom assets from ./CustomAssets folder for hot-swapping textures and meshes.
+
+## Installation
+1. Copy GKFR.AssetLoader.dll to your BepInEx/plugins folder
+2. Create a CustomAssets folder in your game directory
+3. Place your custom assets (textures, meshes) in the CustomAssets folder
+
+## How to Use
+1. Organize your custom assets in subfolders within the CustomAssets directory
+2. The mod will automatically load assets when they are referenced in-game
+3. Supported formats: .png, .jpg (textures), .obj (meshes), .asset (Unity assets)
+
+## Configuration
+Edit BepInEx/config/com.gkfr.assetloader.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.CustomAssetsPath: Path to custom assets folder (default: ./CustomAssets)
+- CharacterColors.ArleneColor: Hex color for Arlene character (default: #FF0000)
+
+## Keybindings
+No keybindings - the mod works automatically.
+
+## Notes
+- Mesh replacement is aggressive and may affect multiple objects
+- The mod is designed for Arlene character specifically but can be adapted for others
+- Custom textures are cached to improve performance
+- This is a development tool mod - some features may be experimental

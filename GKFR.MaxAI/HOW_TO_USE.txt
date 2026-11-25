@@ -1,0 +1,28 @@
+# Max AI Mod
+
+## Description
+Limits the number of AI players that spawn. F7 to open settings.
+
+## Installation
+1. Copy GKFR.MaxAI.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F7 to open the Max AI settings window
+2. Use the slider or enter a custom value to set maximum AI count
+3. Quick presets: 0 AI, 3 AI, 7 AI, Unlimited (999)
+
+## Configuration
+Edit BepInEx/config/com.gkfr.maxai.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.MaxAIPlayers: Maximum number of AI players (default: 999)
+- General.ToggleKey: Toggle key (default: F7)
+
+## Keybindings
+- F7: Toggle Max AI settings window on/off
+
+## Notes
+- Setting to 0 will disable all AI
+- The counter resets each race
+- AI count is checked when creating players

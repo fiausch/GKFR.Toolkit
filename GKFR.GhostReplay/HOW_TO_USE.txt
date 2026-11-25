@@ -1,0 +1,33 @@
+# Ghost Replay Mod
+
+## Description
+Record your best lap, replay it as a translucent kart you race against.
+
+## Installation
+1. Copy GKFR.GhostReplay.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F10 to toggle ghost replay on/off
+2. Press F11 to start/stop recording your lap
+3. Press F2 to play back the ghost replay
+4. Adjust ghost transparency in settings (0-1 range)
+
+## Configuration
+Edit BepInEx/config/com.gkfr.ghostreplay.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle ghost replay on/off (default: F10)
+- Recording.RecordKey: Key to start/stop recording (default: F11)
+- Recording.ReplayKey: Key to play back ghost replay (default: F2)
+- Display.GhostTransparency: Transparency level of ghost kart (default: 0.5)
+
+## Keybindings
+- F10: Toggle ghost replay on/off
+- F11: Start/stop recording
+- F2: Play back ghost replay
+
+## Notes
+- This mod is useful for time-trial practice
+- The ghost is translucent so you can see it through walls
+- Implementation requires recording and replaying kart positions/movements

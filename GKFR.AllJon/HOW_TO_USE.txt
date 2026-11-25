@@ -1,0 +1,25 @@
+# All Jon Mod
+
+## Description
+Replaces all AI racers with Jon. Toggle with F6 (no restart needed).
+
+## Installation
+1. Copy GKFR.AllJon.dll to your BepInEx/plugins folder
+2. Launch the game
+3. Press F6 to toggle All Jon on/off
+
+## How to Use
+- Press F6 to toggle the mod on/off
+- When enabled, all AI racers will be replaced with Jon
+- The toggle works in-game without restarting the race
+
+## Configuration
+No configuration file is required.
+
+## Keybindings
+- F6: Toggle All Jon on/off
+
+## Notes
+- This mod is part of the GKFR.Toolkit collection
+- The mod works by patching the character creation methods to force Jon as the character for all AI racers
+- Works in both single-player and multiplayer
