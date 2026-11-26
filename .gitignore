@@ -3,5 +3,10 @@
 .vs/
 *.user
 artifacts/
-*.md
+BEGINNER_GUIDE.md
 *.dll
+*.pdb
+.clinerules
+KEYBINDING_CONFLICTS.md
+MOD_FUNCTIONALITY_VALIDATION.md
+vscode/

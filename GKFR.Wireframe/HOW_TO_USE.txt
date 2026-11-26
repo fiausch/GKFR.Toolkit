@@ -1,0 +1,52 @@
+# Wireframe Mod
+
+## Description
+Wireframe overlay for models + colliders. F9 toggles, F10 cycles modes, F12 solid colour.
+
+## Installation
+1. Copy GKFR.Wireframe.dll to your BepInEx/plugins folder
+2. Launch the game
+
+## How to Use
+1. Press F9 to toggle the wireframe overlay on/off
+2. Press F10 to cycle the view mode:
+   - All (models + colliders) - every visible model and collider drawn as wireframe
+   - Invisible walls - only colliders with no visible mesh
+   - Death walls - only colliders on the game's death mask
+3. Press F12 to toggle single-colour mode (draw everything in one colour)
+
+## Configuration
+Edit BepInEx/config/gkfr.wireframe.cfg to adjust settings:
+
+- General.Enabled: Enable/disable the mod (default: true)
+- General.ToggleKey: Toggle key (default: F9)
+- General.ModeKey: Mode cycle key (default: F10)
+- General.SolidColorKey: Solid colour toggle key (default: F12)
+- Render.DrawThroughGeometry: Draw through geometry (default: true)
+- Render.MaxMeshVerts: Max vertices for full wireframe (default: 6000)
+- Layers.DrawModels: Draw visible meshes (default: true)
+- Layers.DrawTriggers: Draw trigger colliders (default: true)
+- Layers.DrawWalls: Draw wall colliders (default: true)
+- Layers.DrawRoad: Draw road colliders (default: false)
+- Layers.DrawVehicles: Draw vehicle colliders (default: false)
+- Layers.DrawOther: Draw other colliders (default: true)
+
+## Keybindings
+- F9: Toggle wireframe on/off
+- F10: Cycle view mode (All / Invisible walls / Death walls)
+- F12: Toggle solid colour mode
+
+## Colours (see config for customization)
+- **Model color**: Blue-ish (visible models)
+- **Death color**: Red (death mask colliders)
+- **Trigger color**: Orange (event zones)
+- **Invisible color**: Magenta (invisible barriers)
+- **Wall color**: Cyan (visible walls)
+- **Road color**: Grey (road surfaces)
+- **Vehicle color**: Yellow (karts/vehicles)
+- **Other color**: Light green (misc colliders)
+
+## Notes
+- The mod is designed for debugging and inspection
+- Configurable per-category visibility and colors
+- Bounding boxes used for large meshes for performance

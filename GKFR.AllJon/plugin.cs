@@ -97,20 +97,20 @@ namespace GKFR.AllJon
     }
 
     // Patch GkNetMgr.BuildDriver to override character in network synchronization
-    [HarmonyPatch(typeof(GkNetMgr), "BuildDriver")]
-    public class GkNetMgrPatch
-    {
-        [HarmonyPrefix]
-        public static bool Prefix(GameObject driverObject, Vector3 color, string onlineId, int rankScore)
-        {
-            if (Plugin.Instance.Enabled)
-            {
-                Debug.Log("[AllJon] Intercepting GkNetMgr.BuildDriver for network synchronization");
-                // We'll handle character override in PlayerBuilder.Build instead
-            }
-            return true; // Continue with the original method
-        }
-    }
+    // [HarmonyPatch(typeof(GkNetMgr), "BuildDriver")]
+    // public class GkNetMgrPatch
+    // {
+    //     [HarmonyPrefix]
+    //     public static bool Prefix(GameObject driverObject, Vector3 color, string onlineId, int rankScore)
+    //     {
+    //         if (Plugin.Instance.Enabled)
+    //         {
+    //             Debug.Log("[AllJon] Intercepting GkNetMgr.BuildDriver for network synchronization");
+    //             // We'll handle character override in PlayerBuilder.Build instead
+    //         }
+    //         return true; // Continue with the original method
+    //     }
+    // }
 
     // Additional patch to catch character setup in Driver component
     [HarmonyPatch(typeof(Driver), "SetCharacterID")]
