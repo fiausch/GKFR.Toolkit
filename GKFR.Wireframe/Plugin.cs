@@ -85,7 +85,7 @@ namespace GKFR.Wireframe
         {
             Instance = this;
             enabledEntry = Config.Bind("General", "Enabled", true, "Master switch. When off, F9 does nothing.");
-            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F9, "Key to toggle the wireframe overlay.");
+            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F1, "Key to toggle the wireframe overlay.");
             modeKey = Config.Bind("General", "ModeKey", KeyCode.F10, "Key to cycle the view mode (All / Invisible walls / Death walls).");
             drawModels = Config.Bind("Layers", "DrawModels", true, "Draw visible meshes as wireframe (All mode only). Turn off if it runs slow.");
             drawTriggers = Config.Bind("Layers", "DrawTriggers", true, "Draw trigger colliders (event zones) in All mode.");

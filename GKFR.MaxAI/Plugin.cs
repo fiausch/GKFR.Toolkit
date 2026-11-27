@@ -61,7 +61,7 @@ namespace GKFR.MaxAI
 
             enabledEntry = Config.Bind("General", "Enabled", true, "Enable AI player limit.");
             maxAIPlayersEntry = Config.Bind("General", "MaxAIPlayers", 999, "Maximum number of AI players (0 = no AI, higher = more AI). No upper limit.");
-            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F7, "Toggle MaxAI settings window.");
+            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F1, "Toggle MaxAI settings window.");
 
             maxAIText = "999"; // Set default text to match default config
 

@@ -39,7 +39,7 @@ namespace GKFR.NoItems
         {
             Instance = this;
             enabledEntry = Config.Bind("General", "Enabled", true, "Master switch. When off, F6 does nothing.");
-            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F6, "Key to toggle no-items on/off.");
+            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F11Modifier, "Key to toggle no-items on/off.");
             disableAllItems = Config.Bind("General", "DisableAllItems", false, "Disable all items completely");
             whitelistItems = Config.Bind("General", "WhitelistItems", "", "Comma-separated list of item names to allow (empty = all disabled)");
 

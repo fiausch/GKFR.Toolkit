@@ -39,9 +39,9 @@ namespace GKFR.CheckpointTeleporter
         {
             Instance = this;
             enabledEntry = Config.Bind("General", "Enabled", true, "Master switch. When off, keys do nothing.");
-            toStartKey = Config.Bind("Teleport", "ToStartKey", KeyCode.F7, "Key to teleport to start");
-            toLastKey = Config.Bind("Teleport", "ToLastKey", KeyCode.F8, "Key to teleport to last checkpoint");
-            toNextKey = Config.Bind("Teleport", "ToNextKey", KeyCode.F9, "Key to teleport to next checkpoint");
+            toStartKey = Config.Bind("Teleport", "ToStartKey", KeyCode.F1, "Key to teleport to start");
+            toLastKey = Config.Bind("Teleport", "ToLastKey", KeyCode.F1, "Key to teleport to last checkpoint");
+            toNextKey = Config.Bind("Teleport", "ToNextKey", KeyCode.F1, "Key to teleport to next checkpoint");
 
             Logger.LogInfo("Tera GKFR Checkpoint Teleporter loaded. Use F7/F8/F9 for teleportation.");
         }

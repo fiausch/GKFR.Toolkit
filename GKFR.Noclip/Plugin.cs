@@ -77,7 +77,7 @@ namespace GKFR.Noclip
         {
             Instance = this;
             enabledEntry = Config.Bind("General", "Enabled", true, "Master switch. When off, F8 does nothing and the kart behaves normally.");
-            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F8, "Key to toggle noclip on/off.");
+            toggleKey = Config.Bind("General", "ToggleKey", KeyCode.F1, "Key to toggle noclip on/off.");
             moveSpeed = Config.Bind("Movement", "MoveSpeed", 25f, "Fly speed in units per second.");
             fastMoveSpeed = Config.Bind("Movement", "FastMoveSpeed", 90f, "Fly speed while holding Shift.");
             lookSensitivity = Config.Bind("Movement", "LookSensitivity", 3f, "How fast the mouse turns the kart.");
